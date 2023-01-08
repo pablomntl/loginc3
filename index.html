@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&family=Unbounded:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="container-form">
+        <!--form start-->
+        <form action="/" id="form" class="form">
+          <!--logo-->
+          <div class="logo">
+            <img
+              src="img/Screenshot_20220731-170418-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <!--end logo-->
+
+          <div class="title">
+            <h1>Preencha seus dados:</h1>
+          </div>
+
+          <div class="content-input">
+            <input id="email" type="email" class="formulario-input" required  />
+            <label for="">Email</label>
+          </div>
+
+          <div class="content-input">
+            <input id="password" type="password" class="formulario-input" />
+            <label for="">Nome</label>
+            <span
+              ><i
+                class="fa-solid fa-eye"
+                aria-hidden="true"
+                id="show"
+                onclick="toggle()"
+              ></i
+            ></span>
+          </div>
+
+          <button disabled id="btn" class="form-btn btn-input" type="submit">
+            Enviar
+          </button>
+
+          <div class="check-content">
+            <div class="check-icon">
+              <input type="checkbox" /> <label for="">Lembrar-me</label>
+            </div>
+            <div class="link"><a href="#">Recuperar Senha</a></div>
+          </div>
+        </form>
+        <!--form-->
+      
+      </div>
+      
+      <div class="img">
+        <div class="text">
+          <h2>Muito mais que un conciliador financeiro</h2>
+        </div>
+        <img src="img/pexels-energepiccom-2988232.jpg" alt="" />
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
