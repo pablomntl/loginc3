@@ -158,7 +158,9 @@ input:focus + label {
 }
 .check-icon{
     margin: 0 60px;
+    
 }
+
 .link a{
     margin-right: 60px;
     font-size: 14px;
@@ -300,5 +302,29 @@ span {
 }
 
 .lembrar{
-    font-size: 14px;
+    visibility: hidden;
+}
+.lembrar + label {
+    position:relative;
+    padding-left: 5px;
+}
+
+.lembrar + label:before{
+    position: absolute;
+    left: -20px;
+    border: 2px solid #33b18e;
+    content: "";
+    width: 14px;
+    height: 14px;
+    transition: all 0.1s ease-in;
+    border-color : 0.5s ease-in ;
+}
+
+.lembrar:checked + label:before{
+    transform: rotate(40deg);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    top: 0;
+    left: -15px;
+    width: 7px;
 }
