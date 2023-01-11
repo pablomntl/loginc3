@@ -1,7 +1,10 @@
+
 let inputs = document.getElementsByClassName('formulario-input');
 for (let i = 0; i < inputs.length; i++) {
+  
   inputs[i].addEventListener('keyup', function () {
-    if (this.value.length >= 1) {
+    
+    if (this.value.length >=1) {
       this.nextElementSibling.classList.add('fijar')
     } else {
       this.nextElementsSibling.classList.remove('fijar')
@@ -9,28 +12,30 @@ for (let i = 0; i < inputs.length; i++) {
   })
 }
 
-function label () {
-  
-}
 //disable button
 let form = document.querySelector("#form")
 let btn = document.querySelector("#btn")
 
 function disableButton() {
   let desabilitar = false;
+  
   if(form.email.value  === "") {
     desabilitar = true;
+    
   }
   if(form.password.value  === "") {
     desabilitar = true;
 
   }
+  
   if(desabilitar === true) {
     btn.disabled = true;
     this.classList.remove('form-btn')
   } else{
     btn.disabled = false;
     this.classList.add('form-btn')
+    
+    
    }
   
 }
@@ -54,4 +59,3 @@ function toggle () {
   }
 }
 
- 
