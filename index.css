@@ -1,5 +1,4 @@
- 
- :root {
+:root {
     --primary-color: #33b18e;
     --font: 'Sora', sans-serif;
  }
@@ -9,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 section, .box , .container-form  {
     display: flex;
@@ -27,7 +25,7 @@ section, .box , .container-form  {
 
 .container-form {
     background-color:#fff ;
-    height: 700px;
+    height: 630px;
     width: 600px;
     border-radius:  14px 0 0 14px  ;
 
@@ -38,7 +36,7 @@ section, .box , .container-form  {
      justify-content: center;
      height: 100px;
      width: 100%;
-     margin-bottom: 100px;
+     margin-bottom: 80px;
      
 
 }
@@ -50,7 +48,6 @@ section, .box , .container-form  {
     object-fit: cover;
     opacity: 1;
 }
-
 
 .input-content {
     position: relative;
@@ -104,7 +101,7 @@ input:focus + label {
 .title h1 {
     line-height: 45px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: var(--font);
     color: var(--primary-color);
 
@@ -176,10 +173,18 @@ input:focus + label {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    border-radius: 20px;
 
    
 }
+.whatsapp-content a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: 0.5s ease;
+}
+   
 .whatsapp-content .fa-whatsapp {
     font-size: 24px;
     
@@ -189,18 +194,17 @@ input:focus + label {
     height: 40px;
     width: 40%;
     padding: 20px 15px;
-    background-color: var(--primary-color);
     font-family:  var(--font);
     border: none;
     border-width: 2px;
     border-radius:5px;
 }
 .whatsapp::after {
-    content: "whatsapp";
+    content: "WhatsApp";
     margin-left: 5px;
 }
 .img {
-    height: 700px;
+    height: 630px;
     width: 600px;
     /* background-image: url(./tar.jpg); */
     /* background-size: contain; */
@@ -213,7 +217,7 @@ input:focus + label {
 img{
 opacity: 0.1;
 object-fit: cover;
-height: 700px;
+height: 630px;
 width: 600px;
 display: block;
 border-radius: 0 14px 14px 0 ;
@@ -260,7 +264,6 @@ span {
     right: 85px;
     transform: translate(50%,-50%);
 }
-
 
 .consulta {
     
