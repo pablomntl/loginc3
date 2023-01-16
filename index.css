@@ -101,7 +101,7 @@ input:focus + label {
 .title h1 {
     line-height: 45px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-family: var(--font);
     color: var(--primary-color);
 
