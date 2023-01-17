@@ -46,7 +46,7 @@ section, .box , .container-form  {
     width: 200px;
     display: block;
     object-fit: cover;
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 .input-content {
@@ -203,29 +203,43 @@ input:focus + label {
     content: "WhatsApp";
     margin-left: 5px;
 }
-.img {
+.back-image {
+    position: relative;
     height: 630px;
     width: 600px;
-    /* background-image: url(./tar.jpg); */
-    /* background-size: contain; */
+    background: url(./img/pexels-energepiccom-2988232.jpg); 
+    background-size: cover;
     border-radius: 0 14px 14px 0 ;
-    background: linear-gradient(0deg, rgba(53, 61, 145, 0.9), rgba(54, 179, 144, 0.9));
+   
     
     
 }
-
-img{
+.back-image:before {
+    content: "";
+    height: 630px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.7;
+    background: linear-gradient(0deg, rgba(53, 61, 145, 0.9), rgba(54, 179, 144, 0.9));
+    border-radius: 0 14px 14px 0 ;
+    opacity: 1;
+    
+}
+/* img{
 opacity: 0.1;
 object-fit: cover;
 height: 630px;
 width: 600px;
 display: block;
 border-radius: 0 14px 14px 0 ;
-}
+} */
 
 .text {
-    position: relative;
-    background-color: rgb(37, 62, 85);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 700px;
     width: 100%;
     
   
@@ -234,7 +248,7 @@ border-radius: 0 14px 14px 0 ;
 .text h2 {
     position: absolute;
     text-align: center;
-    margin: 300px 10px 10px 10px;
+    top:35%;
     font-family: var(--font);
     font-weight: 600;
     font-size: 24px;
@@ -303,4 +317,48 @@ span {
     top: 0;
     left: -15px;
     width: 7px;
+}
+
+
+.slider { 
+    overflow: hidden;
+ } 
+.slider .parrafos p { 
+    width: 20%; 
+    float: left; }
+
+ .parrafos { 
+  position: relative;
+  width: 500%;
+  margin-top: 170px;
+  left: 0;
+  text-align: center;
+  animation: 25s slidy infinite;
+}
+.parrafos  p {
+    color: #fff;
+    font-size: 20px;
+    font-family: var(--font);
+}
+.slider {
+    margin-top: 100px;
+}
+
+.parrafos:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -300%; }
+
 }
