@@ -16,6 +16,7 @@ for (let i = 0; i < inputs.length; i++) {
 let form = document.querySelector("#form")
 let btn = document.querySelector("#btn")
 
+
 function disableButton() {
   let desabilitar = false;
   
@@ -31,11 +32,11 @@ function disableButton() {
   if(desabilitar === true) {
     btn.disabled = true;
     this.classList.remove('form-btn')
+    
   } else{
     btn.disabled = false;
     this.classList.add('form-btn')
-    
-    
+  
    }
   
 }

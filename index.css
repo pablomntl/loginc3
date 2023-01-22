@@ -8,7 +8,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* these containers share the same alignment*/
 section, .box , .container-form  {
     display: flex;
     justify-content: center;
@@ -23,14 +23,8 @@ section, .box , .container-form  {
     border-radius:  14px   ;
 }
 
-.container-form {
-    background-color:#fff ;
-    height: 630px;
-    width: 600px;
-    border-radius:  14px 0 0 14px  ;
 
-}
- /*logo*/
+  /*code belonging to the company logo*/
 .logo {
      display: flex;
      justify-content: center;
@@ -46,7 +40,15 @@ section, .box , .container-form  {
     width: 200px;
     display: block;
     object-fit: cover;
-    /* opacity: 1; */
+    
+}
+
+.container-form {
+    background-color:#fff ;
+    height: 630px;
+    width: 600px;
+    border-radius:  14px 0 0 14px  ;
+
 }
 
 .input-content {
@@ -226,14 +228,7 @@ input:focus + label {
     opacity: 1;
     
 }
-/* img{
-opacity: 0.1;
-object-fit: cover;
-height: 630px;
-width: 600px;
-display: block;
-border-radius: 0 14px 14px 0 ;
-} */
+
 
 .text {
    display: flex;
@@ -360,5 +355,82 @@ span {
 75% { left: -300%; }
 95% { left: -300%; }
 100% { left: -300%; }
+
+}
+
+
+
+@media (max-width: 1024px) {
+    .container-form {
+        background-color:#fff ;
+        height: 630px;
+        width: 600px;
+        border-radius:  14px  ;
+       display: flex;
+       flex-direction: culumn;
+       
+    }
+   .back-image{
+    display: none;
+   }
+}
+
+@media only screen and (max-width:620px) {
+    .container-form {
+        height: 620px;
+        width: 100%;
+        border-radius:  14px;
+        display: flex;
+        flex-direction: column; 
+        border-radius: 14px;
+       
+    }
+
+       .input-content {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }   
+
+    .input-content label {
+        position: absolute;
+        left: 60px;
+        top: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        pointer-events: none;
+        transition: 0.3s ease-in;
+        
+    }
+    
+    input:focus + label {
+        top: 18%;
+        left: 10;
+        
+    }
+
+      /*logo*/
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+
+   .logo img {
+        height: 120px;
+        width: 120px;
+        display: block;
+        object-fit: cover;
+  
+}
+
+
 
 }
